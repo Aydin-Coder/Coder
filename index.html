@@ -1,0 +1,53 @@
+<div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext1">1 / 4</div>
+          <img src="pictures/slider1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext1">2 / 4</div>
+          <img src="pictures/slider2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext1">3 / 4</div>
+          <img src="pictures/slider3.jpg" style="width:100%">
+        </div>
+
+
+        <div class="mySlides fade">
+          <div class="numbertext1">4 / 4</div>
+          <img src="pictures/slider4.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+<!-- Automatic Slideshow -->
+        <script>
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 6000); // Change image every 6 seconds
+}
+        </script>
+slideshow code
+.mySlides {display: none}
+img {vertical-align: middle;}
+/* Slideshow container /
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/ Hide the images by default */
+.mySlides {
+  display: none;
+}
