@@ -10,7 +10,7 @@ h5{
  color: white;
  font-family: sans-serif;
 }
-.mySlides {display: none}
+.mySlides {display: center}
 img {vertical-align: middle;}
 /* Slideshow container /
 .slideshow-container {
